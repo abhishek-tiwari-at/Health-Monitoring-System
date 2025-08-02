@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<feature id="io.siddhi.distribution.common" label="Siddhi Distribution - Common Feature" provider-name="%providerName" version="5.1.2">
+  <description>This feature contains the bundles related to Stream Processor Common</description>
+  <copyright>%copyright</copyright>
+  <license url="%licenseURL">%license</license>
+  <plugin id="io.siddhi.distribution.common" unpack="false" version="5.1.2"/>
+  <require/>
+</feature>

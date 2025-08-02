@@ -1,0 +1,22 @@
+|--- hypertension <= 0.50
+|   |--- heart_disease <= 0.50
+|   |   |--- gender <= 0.50
+|   |   |   |--- class: 0.0
+|   |   |--- gender >  0.50
+|   |   |   |--- class: 0.0
+|   |--- heart_disease >  0.50
+|   |   |--- bmi <= 20.15
+|   |   |   |--- class: 1.0
+|   |   |--- bmi >  20.15
+|   |   |   |--- class: 0.0
+|--- hypertension >  0.50
+|   |--- gender <= 0.50
+|   |   |--- age <= 55.50
+|   |   |   |--- class: 0.0
+|   |   |--- age >  55.50
+|   |   |   |--- class: 0.0
+|   |--- gender >  0.50
+|   |   |--- smoking_status <= 1.50
+|   |   |   |--- class: 0.0
+|   |   |--- smoking_status >  1.50
+|   |   |   |--- class: 0.0

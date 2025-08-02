@@ -1,0 +1,200 @@
+@App:name("CardioApp")
+@App:description("Detects potential cardio related risks.")
+
+
+@source(
+    type='kafka',
+    topic.list='cardio_topic',  -- Corrected topic name
+    bootstrap.servers='localhost:9092',
+    partition.no='0',
+    group.id='vitals_con_group',
+    threading.option='single.thread',
+    @map(type='json')
+)
+define stream PatientsVitalStream (
+    id int,
+    age long,
+    gender int,
+    height double,
+    weight double,
+    ap_hi int,
+    ap_lo int,
+    cholesterol int,
+    gluc int, 
+    smoke int,
+    alco int, 
+    active int
+);
+
+define stream AlertsStream (
+    id int,
+    detection_timestamp long,
+    riskLevel string,
+    triggeredRule string
+);
+
+@sink(
+    type='log',
+    prefix='ALERT: Potential Cardio Related Risk:🔴',
+    @map(type='json')
+)
+define stream LogAlertsStream (
+    id int,
+    detection_timestamp long,
+    riskLevel string,
+    triggeredRule string
+);
+
+@sink(
+    type='kafka',
+    topic='cardio_topic_alert',
+    bootstrap.servers='localhost:9092',
+    prefix='ALERT: Potential Cardio Related Risk:🔴',
+    @map(type='json')
+)
+define stream HeartRiskAlertsStream (
+     id int,
+    detection_timestamp long,
+    riskLevel string,
+    triggeredRule string
+);
+
+-- Rule 1
+@info(name='Rule1_Risk')
+from PatientsVitalStream[
+      ap_hi <= 129.50 and cholesterol <= 2.50 and age <= 22203.50 and ap_lo > 98.00 and age >19828.50 
+]
+select id, eventTimestamp() AS detection_timestamp,'High Risk' as riskLevel,
+       'Rule 1:ap_hi <= 129.50 and cholesterol <= 2.50 and age <= 22203.50 and ap_lo > 98.00 and age >19828.50' as triggeredRule
+insert into AlertsStream;
+
+-- Rule 2
+@info(name='Rule2_Risk')
+from PatientsVitalStream[
+    ap_hi <= 129.50 and cholesterol <= 2.50 and age > 22203.50 and ap_lo > 78.00 and active <= 0.5
+]
+select id,eventTimestamp() AS detection_timestamp, 'High Risk' as riskLevel,
+       'Rule 2:ap_hi <= 129.50 and cholesterol <= 2.50 and age <= 22203.50 and ap_lo > 78.00 and active <= 0.5' as triggeredRule
+insert into AlertsStream;
+
+-- Rule 3
+@info(name='Rule3_Risk')
+from PatientsVitalStream[
+     ap_hi <= 129.50 and cholesterol > 2.50 and age <= 19317.50 and gluc <= 2.50 and ap_lo <= 72.50
+]
+select id, eventTimestamp() AS detection_timestamp,'High Risk' as riskLevel,
+       'Rule 3:ap_hi <= 129.50 and cholesterol > 2.50 and age <= 19317.50 and gluc <= 2.50 and ap_lo <= 72.50' as triggeredRule
+insert into AlertsStream;
+
+-- Rule 8
+@info(name='Rule4_Risk')
+from PatientsVitalStream[
+   ap_hi <= 129.50 and cholesterol > 2.50 and age <= 19317.50 and gluc <= 2.50 and ap_lo <= 72.50
+]
+select id, eventTimestamp() AS detection_timestamp,'High Risk' as riskLevel,
+       'ap_hi <= 129.50 and cholesterol > 2.50 and age <= 19317.50 and gluc <= 2.50 and ap_lo <= 72.50' as triggeredRule
+insert into AlertsStream;
+
+-- Rule 10
+@info(name='Rule5_Risk')
+from PatientsVitalStream[
+    ap_hi <= 129.50 and cholesterol > 2.50 and age <= 19317.50 and gluc > 2.50 and weight > 79.50
+]
+select id, eventTimestamp() AS detection_timestamp,'High Risk' as riskLevel,
+       'Rule 10:ap_hi <= 129.50 and cholesterol > 2.50 and age <= 19317.50 and gluc > 2.50 and weight > 79.50' as triggeredRule
+insert into AlertsStream;
+
+-- Rule 11
+@info(name='Rule6_Risk')
+from PatientsVitalStream[
+    ap_hi <= 129.50 and cholesterol > 2.50 and age > 19317.50 and ap_lo <= 79.50 and weight <= 67.50
+]
+select id, eventTimestamp() AS detection_timestamp,'High Risk' as riskLevel,
+       'Rule 5: ap_hi <= 129.50 and cholesterol > 2.50 and age > 19317.50 and ap_lo <= 79.50 and weight <= 67.50' as triggeredRule
+insert into AlertsStream;
+
+-- Rule 13
+@info(name='Rule7_Risk')
+from PatientsVitalStream[
+   ap_hi <= 129.50 and cholesterol > 2.50 and age > 19317.50 and ap_lo <= 79.50 and weight > 67.50
+]
+select id, eventTimestamp() AS detection_timestamp,'High Risk' as riskLevel,
+       'ap_hi <= 129.50 and cholesterol > 2.50 and age > 19317.50 and ap_lo <= 79.50 and weight > 67.50' as triggeredRule
+insert into AlertsStream;
+
+-- Rule 15
+@info(name='Rule8_Risk')
+from PatientsVitalStream[
+    ap_hi <= 129.50 and cholesterol > 2.50 and age > 19317.50 and ap_lo > 79.50 and age <= 19839.50
+]
+select id, eventTimestamp() AS detection_timestamp,'High Risk' as riskLevel,
+       'ap_hi <= 129.50 and cholesterol > 2.50 and age > 19317.50 and ap_lo > 79.50 and age <= 19839.50' as triggeredRule
+insert into AlertsStream;
+
+-- Rule 20
+@info(name='Rule9_Risk')
+from PatientsVitalStream[
+    ap_hi <= 129.50 and cholesterol > 2.50 and age > 19317.50 and ap_lo > 79.50 and age > 19839.50 
+]
+select id, eventTimestamp() AS detection_timestamp,'High Risk' as riskLevel,
+'Rule 20:ap_hi <= 129.50 and cholesterol > 2.50 and age > 19317.50 and ap_lo > 79.50 and age > 19839.50 ' as triggeredRule
+insert into AlertsStream;
+
+-- Rule 21
+@info(name='Rule10_Risk')
+from PatientsVitalStream[
+    ap_hi > 129.50 and ap_hi <= 133.50 and ap_lo <= 88.50 and age <= 19804.50 and cholesterol <= 1.50
+]
+select id, eventTimestamp() AS detection_timestamp,'High Risk' as riskLevel,
+       'Rule 21: ap_hi > 129.50 and ap_hi <= 133.50 and ap_lo <= 88.50 and age <= 19804.50 and cholesterol <= 1.50' as triggeredRule
+insert into AlertsStream;
+
+-- Rule 22
+@info(name='Rule11_Risk')
+from PatientsVitalStream[
+   ap_hi > 129.50 and ap_hi <= 133.50 and ap_lo <= 88.50 and age <= 19804.50 and cholesterol > 1.50
+]
+select id, eventTimestamp() AS detection_timestamp,'High Risk' as riskLevel,
+       'Rule 22:ap_hi > 129.50 and ap_hi <= 133.50 and ap_lo <= 88.50 and age <= 19804.50 and cholesterol > 1.50' as triggeredRule
+insert into AlertsStream;
+
+
+@info(name='Rule12_Risk')
+from PatientsVitalStream[
+    ap_hi > 129.50 and ap_hi > 133.50 and ap_lo <= 5.00 and id <= 56213.00
+]
+select id, eventTimestamp() AS detection_timestamp,'High Risk' as riskLevel,
+       'Rule 12: ap_hi > 129.50 and ap_hi > 133.50 and ap_lo <= 5.00 and id <= 56213.00' as triggeredRule
+insert into AlertsStream;
+
+
+@info(name='Rule13_Risk')
+from PatientsVitalStream[
+ ap_hi > 129.50 and ap_hi > 133.50 and ap_lo > 5.00 and ap_hi <= 138.50 and alco <= 0.50
+]
+select id, eventTimestamp() AS detection_timestamp,'High Risk' as riskLevel,
+       'Rule 11: ap_hi > 129.50 and ap_hi > 133.50 and ap_lo > 5.00 and ap_hi <= 138.50 and alco <= 0.50' as triggeredRule
+insert into AlertsStream;
+
+
+@info(name='Rule14_Risk')
+from PatientsVitalStream[
+  ap_hi > 129.50 and ap_hi > 133.50 and ap_lo > 5.00 and ap_hi > 138.50
+]
+select id, eventTimestamp() AS detection_timestamp,'High Risk' as riskLevel,
+       'Rule 14:ap_hi > 129.50 and ap_hi > 133.50 and ap_lo > 5.00 and ap_hi > 138.50' as triggeredRule
+insert into AlertsStream;
+
+
+
+-- Route alerts to logging
+@info(name='Route_Alerts')
+from AlertsStream
+select *
+insert into LogAlertsStream;
+
+-- Route alerts to Kafka topic
+@info(name='Route_Alerts_to_Kafka')
+from AlertsStream
+select *
+insert into HeartRiskAlertsStream;

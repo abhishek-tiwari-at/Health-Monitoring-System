@@ -1,0 +1,29 @@
+!SESSION 2025-05-02 13:14:46.241 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_CA
+
+!ENTRY org.eclipse.equinox.ds 1 0 2025-05-02 13:14:46.242
+!MESSAGE Could not bind a reference of component org.wso2.msf4j.internal.websocket.WebSocketServerSC. The reference is: Reference[name = websocketEndpoint, interface = org.wso2.msf4j.websocket.WebSocketEndpoint, policy = dynamic, cardinality = 0..n, target = null, bind = addEndpoint, unbind = removeEndpoint]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2025-05-02 13:14:46.284
+!MESSAGE Could not bind a reference of component org.wso2.carbon.kernel.internal.runtime.RuntimeServiceListenerComponent. The reference is: Reference[name = carbon.runtime.service, interface = org.wso2.carbon.kernel.runtime.Runtime, policy = dynamic, cardinality = 0..n, target = null, bind = registerRuntime, unbind = unRegisterRuntime]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2025-05-02 13:14:46.523
+!MESSAGE Could not bind a reference of component org.wso2.msf4j.internal.MicroServicesServerSC. The reference is: Reference[name = interceptor-config, interface = org.wso2.msf4j.interceptor.OSGiInterceptorConfig, policy = dynamic, cardinality = 0..n, target = null, bind = addInterceptorConfig, unbind = removeInterceptorConfig]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2025-05-02 13:14:46.523
+!MESSAGE Could not bind a reference of component org.wso2.msf4j.internal.MicroServicesServerSC. The reference is: Reference[name = session-manager, interface = org.wso2.msf4j.SessionManager, policy = dynamic, cardinality = 0..1, target = null, bind = addSessionManager, unbind = removeSessionManager]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2025-05-02 13:14:46.553
+!MESSAGE Could not bind a reference of component org.wso2.carbon.deployment.engine.internal.DeploymentEngineListenerComponent. The reference is: Reference[name = carbon.deployer.service, interface = org.wso2.carbon.deployment.engine.Deployer, policy = dynamic, cardinality = 0..n, target = null, bind = registerDeployer, unbind = unregisterDeployer]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2025-05-02 13:14:46.553
+!MESSAGE Could not bind a reference of component org.wso2.carbon.deployment.engine.internal.DeploymentEngineListenerComponent. The reference is: Reference[name = carbon.deployment.listener.service, interface = org.wso2.carbon.deployment.engine.LifecycleListener, policy = dynamic, cardinality = 0..n, target = null, bind = registerDeploymentListener, unbind = unregisterDeploymentListener]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2025-05-02 13:14:46.554
+!MESSAGE Could not bind a reference of component org.wso2.carbon.metrics.core.internal.MetricsComponent. The reference is: Reference[name = carbon.metrics.extension, interface = org.wso2.carbon.metrics.core.spi.MetricsExtension, policy = dynamic, cardinality = 0..n, target = null, bind = setMetricsExtension, unbind = unsetMetricsExtension]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2025-05-02 13:14:46.857
+!MESSAGE Could not bind a reference of component stream-processor-deployer. The reference is: Reference[name = io.siddhi.distribution.common.common.SimulationDependencyListener, interface = io.siddhi.distribution.common.common.SimulationDependencyListener, policy = dynamic, cardinality = 0..1, target = null, bind = subscribeToListener, unbind = unsubscribeFromListener]

@@ -1,0 +1,1526 @@
+[2025-05-01 11:22:14,116]  INFO {org.wso2.msf4j.internal.websocket.WebSocketServerSC} - All required capabilities are available of WebSocket service component is available.
+[2025-05-01 11:22:14,127]  INFO {org.wso2.carbon.metrics.core.config.model.JmxReporterConfig} - Creating JMX reporter for Metrics with domain 'org.wso2.carbon.metrics'
+[2025-05-01 11:22:14,139]  INFO {org.wso2.msf4j.analytics.metrics.MetricsComponent} - Metrics Component is activated
+[2025-05-01 11:22:14,141]  INFO {org.wso2.carbon.databridge.agent.internal.DataAgentDS} - Successfully deployed Agent Server 
+[2025-05-01 11:22:14,334]  INFO {org.wso2.carbon.analytics.idp.client.core.utils.IdPServiceUtils} - Enabling default IdPClient Local User Store as configuration is not overridden.
+[2025-05-01 11:22:14,337]  INFO {org.wso2.carbon.analytics.idp.client.core.utils.IdPServiceUtils} - IdP client of type 'local' is started.
+[2025-05-01 11:22:14,348] ERROR {io.siddhi.distribution.core.internal.ServiceComponent} - Error: File HeartDiseaseAlertApp.siddhi not found in the given location.
+[2025-05-01 11:22:14,349] ERROR {io.siddhi.distribution.core.internal.StreamProcessorDeployer} - Error: 'HeartDiseaseAlertApp.siddhi' is a sub-directory; hence, ignored.
+[2025-05-01 11:22:14,413]  INFO {org.wso2.msf4j.internal.MicroservicesServerSC} - All microservices are available
+[2025-05-01 11:22:14,460]  INFO {org.wso2.transport.http.netty.contractimpl.listener.ServerConnectorBootstrap$HttpServerConnector} - HTTP(S) Interface starting on host 0.0.0.0 and port 9090
+[2025-05-01 11:22:14,460]  INFO {org.wso2.transport.http.netty.contractimpl.listener.ServerConnectorBootstrap$HttpServerConnector} - HTTP(S) Interface starting on host 0.0.0.0 and port 9443
+[2025-05-01 11:22:14,864]  INFO {org.apache.kafka.clients.producer.ProducerConfig} - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[2025-05-01 11:22:14,886]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka version: 2.3.0
+[2025-05-01 11:22:14,886]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka commitId: fc1aaa116b661c8a
+[2025-05-01 11:22:14,886]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka startTimeMs: 1746078734886
+[2025-05-01 11:22:14,887]  INFO {io.siddhi.extension.io.kafka.sink.KafkaSink} - Kafka producer created.
+[2025-05-01 11:22:14,892]  INFO {org.apache.kafka.clients.consumer.ConsumerConfig} - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = vitals_consumer_group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 30000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2025-05-01 11:22:14,910]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka version: 2.3.0
+[2025-05-01 11:22:14,910]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka commitId: fc1aaa116b661c8a
+[2025-05-01 11:22:14,910]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka startTimeMs: 1746078734910
+[2025-05-01 11:22:14,911]  INFO {org.apache.kafka.clients.consumer.KafkaConsumer} - [Consumer clientId=consumer-1, groupId=vitals_consumer_group] Subscribed to topic(s): heart_topic
+[2025-05-01 11:22:14,911]  INFO {io.siddhi.extension.io.kafka.source.KafkaConsumerThread} - Subscribed for topics: [heart_topic]
+[2025-05-01 11:22:14,911]  INFO {io.siddhi.extension.io.kafka.source.ConsumerKafkaGroup} - Kafka Consumer thread starting to listen on topic(s): [heart_topic] with partition/s: null
+[2025-05-01 11:22:14,911]  INFO {org.apache.kafka.clients.consumer.ConsumerConfig} - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 30000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2025-05-01 11:22:14,915]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka version: 2.3.0
+[2025-05-01 11:22:14,915]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka commitId: fc1aaa116b661c8a
+[2025-05-01 11:22:14,915]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka startTimeMs: 1746078734915
+[2025-05-01 11:22:15,008]  INFO {org.apache.kafka.clients.Metadata} - [Producer clientId=producer-1] Cluster ID: NVyJ_C7zTRy4CLLz8p2G1A
+[2025-05-01 11:22:15,011]  INFO {org.apache.kafka.clients.producer.ProducerConfig} - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[2025-05-01 11:22:15,013]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka version: 2.3.0
+[2025-05-01 11:22:15,013]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka commitId: fc1aaa116b661c8a
+[2025-05-01 11:22:15,013]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka startTimeMs: 1746078735013
+[2025-05-01 11:22:15,020]  INFO {org.apache.kafka.clients.Metadata} - [Producer clientId=producer-2] Cluster ID: NVyJ_C7zTRy4CLLz8p2G1A
+[2025-05-01 11:22:15,021]  INFO {io.siddhi.distribution.core.internal.StreamProcessorService} - Siddhi App HeartDiseaseAlertApp deployed successfully
+[2025-05-01 11:22:15,027]  INFO {org.apache.kafka.clients.Metadata} - [Consumer clientId=consumer-1, groupId=vitals_consumer_group] Cluster ID: NVyJ_C7zTRy4CLLz8p2G1A
+[2025-05-01 11:22:15,032]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-1, groupId=vitals_consumer_group] Discovered group coordinator ubuntu:9092 (id: 2147483647 rack: null)
+[2025-05-01 11:22:15,035]  INFO {org.apache.kafka.clients.consumer.internals.ConsumerCoordinator} - [Consumer clientId=consumer-1, groupId=vitals_consumer_group] Revoking previously assigned partitions []
+[2025-05-01 11:22:15,035]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-1, groupId=vitals_consumer_group] (Re-)joining group
+[2025-05-01 11:22:15,038]  INFO {org.apache.kafka.clients.producer.ProducerConfig} - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[2025-05-01 11:22:15,041]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka version: 2.3.0
+[2025-05-01 11:22:15,041]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka commitId: fc1aaa116b661c8a
+[2025-05-01 11:22:15,041]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka startTimeMs: 1746078735041
+[2025-05-01 11:22:15,041]  INFO {io.siddhi.extension.io.kafka.sink.KafkaSink} - Kafka producer created.
+[2025-05-01 11:22:15,042]  INFO {org.apache.kafka.clients.consumer.ConsumerConfig} - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = consumer_group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 30000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2025-05-01 11:22:15,045]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka version: 2.3.0
+[2025-05-01 11:22:15,045]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka commitId: fc1aaa116b661c8a
+[2025-05-01 11:22:15,045]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka startTimeMs: 1746078735044
+[2025-05-01 11:22:15,045]  INFO {org.apache.kafka.clients.consumer.KafkaConsumer} - [Consumer clientId=consumer-3, groupId=consumer_group] Subscribed to topic(s): stroke_topic
+[2025-05-01 11:22:15,045]  INFO {io.siddhi.extension.io.kafka.source.KafkaConsumerThread} - Subscribed for topics: [stroke_topic]
+[2025-05-01 11:22:15,046]  INFO {io.siddhi.extension.io.kafka.source.ConsumerKafkaGroup} - Kafka Consumer thread starting to listen on topic(s): [stroke_topic] with partition/s: null
+[2025-05-01 11:22:15,046]  INFO {org.apache.kafka.clients.consumer.ConsumerConfig} - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 30000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2025-05-01 11:22:15,051]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka version: 2.3.0
+[2025-05-01 11:22:15,051]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka commitId: fc1aaa116b661c8a
+[2025-05-01 11:22:15,052]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka startTimeMs: 1746078735051
+[2025-05-01 11:22:15,061]  INFO {org.apache.kafka.clients.producer.ProducerConfig} - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[2025-05-01 11:22:15,063]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka version: 2.3.0
+[2025-05-01 11:22:15,064]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka commitId: fc1aaa116b661c8a
+[2025-05-01 11:22:15,064]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka startTimeMs: 1746078735063
+[2025-05-01 11:22:15,065]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-1, groupId=vitals_consumer_group] (Re-)joining group
+[2025-05-01 11:22:15,068]  INFO {org.apache.kafka.clients.Metadata} - [Producer clientId=producer-4] Cluster ID: NVyJ_C7zTRy4CLLz8p2G1A
+[2025-05-01 11:22:15,069]  INFO {io.siddhi.distribution.core.internal.StreamProcessorService} - Siddhi App StrokeAlertApp deployed successfully
+[2025-05-01 11:22:15,071]  INFO {org.wso2.carbon.kernel.internal.CarbonStartupHandler} - Siddhi Runner Distribution started in 2.430 sec
+[2025-05-01 11:22:15,072]  INFO {org.apache.kafka.clients.Metadata} - [Consumer clientId=consumer-3, groupId=consumer_group] Cluster ID: NVyJ_C7zTRy4CLLz8p2G1A
+[2025-05-01 11:22:15,074]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-3, groupId=consumer_group] Discovered group coordinator ubuntu:9092 (id: 2147483647 rack: null)
+[2025-05-01 11:22:15,075]  INFO {org.apache.kafka.clients.consumer.internals.ConsumerCoordinator} - [Consumer clientId=consumer-3, groupId=consumer_group] Revoking previously assigned partitions []
+[2025-05-01 11:22:15,075]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-3, groupId=consumer_group] (Re-)joining group
+[2025-05-01 11:22:15,078]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-3, groupId=consumer_group] (Re-)joining group
+[2025-05-01 11:22:15,137]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-3, groupId=consumer_group] Successfully joined group with generation 3
+[2025-05-01 11:22:15,137]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-1, groupId=vitals_consumer_group] Successfully joined group with generation 41
+[2025-05-01 11:22:15,140]  INFO {org.apache.kafka.clients.consumer.internals.ConsumerCoordinator} - [Consumer clientId=consumer-3, groupId=consumer_group] Setting newly assigned partitions: stroke_topic-0
+[2025-05-01 11:22:15,140]  INFO {org.apache.kafka.clients.consumer.internals.ConsumerCoordinator} - [Consumer clientId=consumer-1, groupId=vitals_consumer_group] Setting newly assigned partitions: heart_topic-0
+[2025-05-01 11:22:15,142]  INFO {org.apache.kafka.clients.Metadata} - [Producer clientId=producer-3] Cluster ID: NVyJ_C7zTRy4CLLz8p2G1A
+[2025-05-01 11:22:15,151]  INFO {org.apache.kafka.clients.consumer.internals.ConsumerCoordinator} - [Consumer clientId=consumer-1, groupId=vitals_consumer_group] Setting offset for partition heart_topic-0 to the committed offset FetchPosition{offset=3355, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=ubuntu:9092 (id: 0 rack: null), epoch=0}}
+[2025-05-01 11:22:15,151]  INFO {org.apache.kafka.clients.consumer.internals.ConsumerCoordinator} - [Consumer clientId=consumer-3, groupId=consumer_group] Setting offset for partition stroke_topic-0 to the committed offset FetchPosition{offset=44, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=ubuntu:9092 (id: 0 rack: null), epoch=0}}
+[2025-05-01 11:22:15,249] ERROR {io.siddhi.extension.map.json.sourcemapper.JsonSourceMapper} - Json string {"id": "37937", "gender": "Female", "age": 75, "hypertension": 0, "heart_disease": 1, "ever_married": "No", "work_type": "Self-employed", "Residence_type": "Urban", "avg_glucose_level": 109.78, "bmi": NaN, "smoking_status": "Unknown"} cannot be parsed to json object.
+[2025-05-01 11:23:28,775]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078808773,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:23:28,793]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078808773,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:23:28,793]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078808773,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:23:30,375]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078810375,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:23:31,176]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078811176,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:23:31,176]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078811176,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:23:31,177]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078811176,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:23:31,978]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078811978,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:23:31,979]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078811978,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:23:31,979]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078811978,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:23:34,381]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078814381,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:23:35,983]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078815983,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:23:35,983]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078815983,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:23:35,984]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078815983,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:23:36,783]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078816783,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:23:36,784]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078816783,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:23:36,784]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078816783,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:23:38,386]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078818385,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:23:39,186]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078819186,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:23:39,187]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078819186,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:23:39,187]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078819186,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:23:39,988]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078819988,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:23:39,988]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078819988,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:23:39,988]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078819988,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:23:40,789]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078820789,"riskLevel":"High Risk","triggeredRule":"Rule 2: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=N, Cholesterol>192"}}
+[2025-05-01 11:23:42,392]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078822392,"riskLevel":"High Risk","triggeredRule":"Rule 2: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=N, Cholesterol>192"}}
+[2025-05-01 11:23:43,192]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078823192,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:23:43,192]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078823192,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:23:43,192]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078823192,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:23:44,793]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078824793,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:23:44,794]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078824793,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:23:44,794]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078824793,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:23:46,394]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078826394,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:23:46,395]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078826394,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:23:46,395]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078826394,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:23:47,195]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078827195,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:23:47,195]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078827195,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:23:47,196]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078827195,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:23:47,996]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078827996,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:23:47,997]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078827996,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:23:47,997]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078827996,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:23:48,797]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078828797,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:23:52,002]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078832002,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:23:52,003]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078832002,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:23:52,003]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078832002,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:23:52,803]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078832803,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:23:52,803]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078832803,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:23:52,803]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078832803,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:23:53,603]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078833603,"riskLevel":"High Risk","triggeredRule":"Rule 2: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=N, Cholesterol>192"}}
+[2025-05-01 11:23:54,404]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078834404,"riskLevel":"High Risk","triggeredRule":"Rule 1: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=N, Cholesterol<=192"}}
+[2025-05-01 11:23:56,807]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078836807,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:23:59,210]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078839210,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:24:00,812]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078840812,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:24:00,813]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078840812,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:24:00,813]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078840812,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:24:02,415]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078842414,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:24:02,415]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078842414,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:24:02,415]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078842414,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:24:03,216]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078843215,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:24:04,016]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078844016,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:24:04,017]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078844016,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:24:04,017]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078844016,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:24:06,420]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078846420,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:24:06,420]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078846420,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:24:06,421]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078846420,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:24:07,220]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078847220,"riskLevel":"High Risk","triggeredRule":"Rule 2: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=N, Cholesterol>192"}}
+[2025-05-01 11:24:08,022]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078848021,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:24:08,824]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078848824,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:24:11,225]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078851225,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:24:12,828]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078852827,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:24:13,628]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078853628,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:24:13,629]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078853628,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:24:13,629]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078853628,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:24:15,231]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078855230,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:24:16,832]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078856832,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:24:16,833]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078856832,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:24:16,833]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078856832,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:24:18,434]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078858434,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:24:22,440]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078862440,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:24:24,042]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078864042,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:24:24,042]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078864042,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:24:24,042]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078864042,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:24:25,645]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078865644,"riskLevel":"High Risk","triggeredRule":"Rule 1: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=N, Cholesterol<=192"}}
+[2025-05-01 11:24:27,246]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078867246,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:24:28,047]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078868047,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:24:28,047]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078868047,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:24:28,048]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078868047,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:24:28,848]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078868848,"riskLevel":"High Risk","triggeredRule":"Rule 2: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=N, Cholesterol>192"}}
+[2025-05-01 11:24:31,251]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078871251,"riskLevel":"High Risk","triggeredRule":"Rule 2: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=N, Cholesterol>192"}}
+[2025-05-01 11:24:32,052]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078872052,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:24:32,053]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078872052,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:24:32,053]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078872052,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:24:33,654]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078873654,"riskLevel":"High Risk","triggeredRule":"Rule 2: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=N, Cholesterol>192"}}
+[2025-05-01 11:24:35,256]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078875256,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:24:36,057]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078876057,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:24:36,861]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078876860,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:24:37,660]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078877660,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:24:37,661]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078877660,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:24:37,661]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078877660,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:24:39,262]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078879262,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:24:42,466]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078882466,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:24:43,267]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078883267,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:24:43,268]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078883267,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:24:43,268]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078883267,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:24:44,068]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078884068,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:24:45,670]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078885670,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:24:45,671]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078885670,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:24:45,671]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078885670,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:24:48,074]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078888073,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:24:49,675]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078889675,"riskLevel":"High Risk","triggeredRule":"Rule 2: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=N, Cholesterol>192"}}
+[2025-05-01 11:24:50,476]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078890476,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:24:51,278]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078891277,"riskLevel":"High Risk","triggeredRule":"Rule 1: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=N, Cholesterol<=192"}}
+[2025-05-01 11:24:56,083]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078896083,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:24:56,084]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078896083,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:24:56,084]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078896083,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:24:56,884]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078896884,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:24:59,287]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078899287,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:24:59,288]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078899287,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:24:59,288]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746078899287,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:25:00,164]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-1, groupId=vitals_consumer_group] Member consumer-1-0f56da0e-da04-4c75-8813-6b5ca775e163 sending LeaveGroup request to coordinator ubuntu:9092 (id: 2147483647 rack: null)
+[2025-05-01 11:25:00,173]  INFO {io.siddhi.extension.io.kafka.source.KafkaSource} - Kafka Adapter disconnected for topic(s): heart_topic
+[2025-05-01 11:25:00,173]  INFO {org.apache.kafka.clients.producer.KafkaProducer} - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+[2025-05-01 11:25:00,176]  INFO {io.siddhi.distribution.core.internal.StreamProcessorService} - Siddhi App File HeartDiseaseAlertApp undeployed successfully.
+[2025-05-01 11:25:00,186] ERROR {io.siddhi.distribution.core.internal.StreamProcessorDeployer} - io.siddhi.distribution.core.internal.exception.SiddhiAppConfigurationException: Exception occurred when retrieving Siddhi App Name io.siddhi.distribution.core.internal.exception.SiddhiAppDeploymentException: io.siddhi.distribution.core.internal.exception.SiddhiAppConfigurationException: Exception occurred when retrieving Siddhi App Name 
+	at io.siddhi.distribution.core.internal.StreamProcessorDeployer.deploySiddhiQLFile(StreamProcessorDeployer.java:99)
+	at io.siddhi.distribution.core.internal.StreamProcessorDeployer.update(StreamProcessorDeployer.java:196)
+	at org.wso2.carbon.deployment.engine.internal.DeploymentEngine.lambda$updateArtifacts$2(DeploymentEngine.java:342)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.wso2.carbon.deployment.engine.internal.DeploymentEngine.updateArtifacts(DeploymentEngine.java:333)
+	at org.wso2.carbon.deployment.engine.internal.RepositoryScanner.sweep(RepositoryScanner.java:98)
+	at org.wso2.carbon.deployment.engine.internal.RepositoryScanner.scan(RepositoryScanner.java:68)
+	at org.wso2.carbon.deployment.engine.internal.SchedulerTask.run(SchedulerTask.java:43)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.siddhi.distribution.core.internal.exception.SiddhiAppConfigurationException: Exception occurred when retrieving Siddhi App Name 
+	at io.siddhi.distribution.core.internal.StreamProcessorService.getSiddhiAppName(StreamProcessorService.java:177)
+	at io.siddhi.distribution.core.internal.StreamProcessorDeployer.deploySiddhiQLFile(StreamProcessorDeployer.java:79)
+	... 14 more
+Caused by: io.siddhi.query.compiler.exception.SiddhiParserException: Error between @ Line: 124. Position: 0 and @ Line: 124. Position: 25. Syntax error in SiddhiQL, no viable alternative at input '@info(name=Rule11_Risk)KeyError'.
+	at io.siddhi.query.compiler.internal.SiddhiErrorListener.syntaxError(SiddhiErrorListener.java:36)
+	at org.antlr.v4.runtime.ProxyErrorListener.syntaxError(ProxyErrorListener.java:41)
+	at org.antlr.v4.runtime.Parser.notifyErrorListeners(Parser.java:544)
+	at org.antlr.v4.runtime.DefaultErrorStrategy.reportNoViableAlternative(DefaultErrorStrategy.java:310)
+	at org.antlr.v4.runtime.DefaultErrorStrategy.reportError(DefaultErrorStrategy.java:136)
+	at io.siddhi.query.compiler.SiddhiQLParser.execution_element(SiddhiQLParser.java:524)
+	at io.siddhi.query.compiler.SiddhiQLParser.siddhi_app(SiddhiQLParser.java:444)
+	at io.siddhi.query.compiler.SiddhiQLParser.parse(SiddhiQLParser.java:178)
+	at io.siddhi.query.compiler.SiddhiCompiler.parse(SiddhiCompiler.java:73)
+	at io.siddhi.distribution.core.internal.StreamProcessorService.getSiddhiAppName(StreamProcessorService.java:164)
+	... 15 more
+
+[2025-05-01 11:25:25,189]  INFO {io.siddhi.distribution.core.internal.StreamProcessorService} - Siddhi App File HeartDiseaseAlertApp undeployed successfully.
+[2025-05-01 11:25:25,197] ERROR {io.siddhi.distribution.core.internal.StreamProcessorDeployer} - io.siddhi.distribution.core.internal.exception.SiddhiAppConfigurationException: Exception occurred when retrieving Siddhi App Name io.siddhi.distribution.core.internal.exception.SiddhiAppDeploymentException: io.siddhi.distribution.core.internal.exception.SiddhiAppConfigurationException: Exception occurred when retrieving Siddhi App Name 
+	at io.siddhi.distribution.core.internal.StreamProcessorDeployer.deploySiddhiQLFile(StreamProcessorDeployer.java:99)
+	at io.siddhi.distribution.core.internal.StreamProcessorDeployer.update(StreamProcessorDeployer.java:196)
+	at org.wso2.carbon.deployment.engine.internal.DeploymentEngine.lambda$updateArtifacts$2(DeploymentEngine.java:342)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.wso2.carbon.deployment.engine.internal.DeploymentEngine.updateArtifacts(DeploymentEngine.java:333)
+	at org.wso2.carbon.deployment.engine.internal.RepositoryScanner.sweep(RepositoryScanner.java:98)
+	at org.wso2.carbon.deployment.engine.internal.RepositoryScanner.scan(RepositoryScanner.java:68)
+	at org.wso2.carbon.deployment.engine.internal.SchedulerTask.run(SchedulerTask.java:43)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.siddhi.distribution.core.internal.exception.SiddhiAppConfigurationException: Exception occurred when retrieving Siddhi App Name 
+	at io.siddhi.distribution.core.internal.StreamProcessorService.getSiddhiAppName(StreamProcessorService.java:177)
+	at io.siddhi.distribution.core.internal.StreamProcessorDeployer.deploySiddhiQLFile(StreamProcessorDeployer.java:79)
+	... 14 more
+Caused by: io.siddhi.query.compiler.exception.SiddhiParserException: Error between @ Line: 124. Position: 0 and @ Line: 124. Position: 25. Syntax error in SiddhiQL, no viable alternative at input '@info(name=Rule11_Risk)KeyError'.
+	at io.siddhi.query.compiler.internal.SiddhiErrorListener.syntaxError(SiddhiErrorListener.java:36)
+	at org.antlr.v4.runtime.ProxyErrorListener.syntaxError(ProxyErrorListener.java:41)
+	at org.antlr.v4.runtime.Parser.notifyErrorListeners(Parser.java:544)
+	at org.antlr.v4.runtime.DefaultErrorStrategy.reportNoViableAlternative(DefaultErrorStrategy.java:310)
+	at org.antlr.v4.runtime.DefaultErrorStrategy.reportError(DefaultErrorStrategy.java:136)
+	at io.siddhi.query.compiler.SiddhiQLParser.execution_element(SiddhiQLParser.java:524)
+	at io.siddhi.query.compiler.SiddhiQLParser.siddhi_app(SiddhiQLParser.java:444)
+	at io.siddhi.query.compiler.SiddhiQLParser.parse(SiddhiQLParser.java:178)
+	at io.siddhi.query.compiler.SiddhiCompiler.parse(SiddhiCompiler.java:73)
+	at io.siddhi.distribution.core.internal.StreamProcessorService.getSiddhiAppName(StreamProcessorService.java:164)
+	... 15 more
+
+[2025-05-01 11:25:30,197]  INFO {io.siddhi.distribution.core.internal.StreamProcessorService} - Siddhi App File HeartDiseaseAlertApp undeployed successfully.
+[2025-05-01 11:25:30,206] ERROR {io.siddhi.distribution.core.internal.StreamProcessorDeployer} - io.siddhi.distribution.core.internal.exception.SiddhiAppConfigurationException: Exception occurred when retrieving Siddhi App Name io.siddhi.distribution.core.internal.exception.SiddhiAppDeploymentException: io.siddhi.distribution.core.internal.exception.SiddhiAppConfigurationException: Exception occurred when retrieving Siddhi App Name 
+	at io.siddhi.distribution.core.internal.StreamProcessorDeployer.deploySiddhiQLFile(StreamProcessorDeployer.java:99)
+	at io.siddhi.distribution.core.internal.StreamProcessorDeployer.update(StreamProcessorDeployer.java:196)
+	at org.wso2.carbon.deployment.engine.internal.DeploymentEngine.lambda$updateArtifacts$2(DeploymentEngine.java:342)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.wso2.carbon.deployment.engine.internal.DeploymentEngine.updateArtifacts(DeploymentEngine.java:333)
+	at org.wso2.carbon.deployment.engine.internal.RepositoryScanner.sweep(RepositoryScanner.java:98)
+	at org.wso2.carbon.deployment.engine.internal.RepositoryScanner.scan(RepositoryScanner.java:68)
+	at org.wso2.carbon.deployment.engine.internal.SchedulerTask.run(SchedulerTask.java:43)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.siddhi.distribution.core.internal.exception.SiddhiAppConfigurationException: Exception occurred when retrieving Siddhi App Name 
+	at io.siddhi.distribution.core.internal.StreamProcessorService.getSiddhiAppName(StreamProcessorService.java:177)
+	at io.siddhi.distribution.core.internal.StreamProcessorDeployer.deploySiddhiQLFile(StreamProcessorDeployer.java:79)
+	... 14 more
+Caused by: io.siddhi.query.compiler.exception.SiddhiParserException: Error between @ Line: 124. Position: 0 and @ Line: 124. Position: 25. Syntax error in SiddhiQL, no viable alternative at input '@info(name=Rule11_Risk)KeyError'.
+	at io.siddhi.query.compiler.internal.SiddhiErrorListener.syntaxError(SiddhiErrorListener.java:36)
+	at org.antlr.v4.runtime.ProxyErrorListener.syntaxError(ProxyErrorListener.java:41)
+	at org.antlr.v4.runtime.Parser.notifyErrorListeners(Parser.java:544)
+	at org.antlr.v4.runtime.DefaultErrorStrategy.reportNoViableAlternative(DefaultErrorStrategy.java:310)
+	at org.antlr.v4.runtime.DefaultErrorStrategy.reportError(DefaultErrorStrategy.java:136)
+	at io.siddhi.query.compiler.SiddhiQLParser.execution_element(SiddhiQLParser.java:524)
+	at io.siddhi.query.compiler.SiddhiQLParser.siddhi_app(SiddhiQLParser.java:444)
+	at io.siddhi.query.compiler.SiddhiQLParser.parse(SiddhiQLParser.java:178)
+	at io.siddhi.query.compiler.SiddhiCompiler.parse(SiddhiCompiler.java:73)
+	at io.siddhi.distribution.core.internal.StreamProcessorService.getSiddhiAppName(StreamProcessorService.java:164)
+	... 15 more
+
+[2025-05-01 11:27:00,212]  INFO {io.siddhi.distribution.core.internal.StreamProcessorService} - Siddhi App File HeartDiseaseAlertApp undeployed successfully.
+[2025-05-01 11:27:00,243]  INFO {org.apache.kafka.clients.producer.ProducerConfig} - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[2025-05-01 11:27:00,245]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka version: 2.3.0
+[2025-05-01 11:27:00,245]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka commitId: fc1aaa116b661c8a
+[2025-05-01 11:27:00,245]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka startTimeMs: 1746079020245
+[2025-05-01 11:27:00,245]  INFO {io.siddhi.extension.io.kafka.sink.KafkaSink} - Kafka producer created.
+[2025-05-01 11:27:00,246]  INFO {org.apache.kafka.clients.consumer.ConsumerConfig} - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = vitals_consumer_group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 30000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2025-05-01 11:27:00,246]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka version: 2.3.0
+[2025-05-01 11:27:00,247]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka commitId: fc1aaa116b661c8a
+[2025-05-01 11:27:00,247]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka startTimeMs: 1746079020246
+[2025-05-01 11:27:00,247]  INFO {org.apache.kafka.clients.consumer.KafkaConsumer} - [Consumer clientId=consumer-5, groupId=vitals_consumer_group] Subscribed to topic(s): heart_topic
+[2025-05-01 11:27:00,247]  INFO {io.siddhi.extension.io.kafka.source.KafkaConsumerThread} - Subscribed for topics: [heart_topic]
+[2025-05-01 11:27:00,247]  INFO {io.siddhi.extension.io.kafka.source.ConsumerKafkaGroup} - Kafka Consumer thread starting to listen on topic(s): [heart_topic] with partition/s: null
+[2025-05-01 11:27:00,247]  INFO {org.apache.kafka.clients.consumer.ConsumerConfig} - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 30000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2025-05-01 11:27:00,248]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka version: 2.3.0
+[2025-05-01 11:27:00,248]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka commitId: fc1aaa116b661c8a
+[2025-05-01 11:27:00,248]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka startTimeMs: 1746079020248
+[2025-05-01 11:27:00,252]  INFO {org.apache.kafka.clients.producer.ProducerConfig} - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[2025-05-01 11:27:00,253]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka version: 2.3.0
+[2025-05-01 11:27:00,253]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka commitId: fc1aaa116b661c8a
+[2025-05-01 11:27:00,253]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka startTimeMs: 1746079020253
+[2025-05-01 11:27:00,255]  INFO {org.apache.kafka.clients.Metadata} - [Producer clientId=producer-6] Cluster ID: NVyJ_C7zTRy4CLLz8p2G1A
+[2025-05-01 11:27:00,256]  INFO {io.siddhi.distribution.core.internal.StreamProcessorService} - Siddhi App HeartDiseaseAlertApp deployed successfully
+[2025-05-01 11:27:00,258]  INFO {org.apache.kafka.clients.Metadata} - [Consumer clientId=consumer-5, groupId=vitals_consumer_group] Cluster ID: NVyJ_C7zTRy4CLLz8p2G1A
+[2025-05-01 11:27:00,258]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-5, groupId=vitals_consumer_group] Discovered group coordinator ubuntu:9092 (id: 2147483647 rack: null)
+[2025-05-01 11:27:00,259]  INFO {org.apache.kafka.clients.consumer.internals.ConsumerCoordinator} - [Consumer clientId=consumer-5, groupId=vitals_consumer_group] Revoking previously assigned partitions []
+[2025-05-01 11:27:00,259]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-5, groupId=vitals_consumer_group] (Re-)joining group
+[2025-05-01 11:27:00,260]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-5, groupId=vitals_consumer_group] (Re-)joining group
+[2025-05-01 11:27:00,263]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-5, groupId=vitals_consumer_group] Successfully joined group with generation 43
+[2025-05-01 11:27:00,263]  INFO {org.apache.kafka.clients.consumer.internals.ConsumerCoordinator} - [Consumer clientId=consumer-5, groupId=vitals_consumer_group] Setting newly assigned partitions: heart_topic-0
+[2025-05-01 11:27:00,264]  INFO {org.apache.kafka.clients.consumer.internals.ConsumerCoordinator} - [Consumer clientId=consumer-5, groupId=vitals_consumer_group] Setting offset for partition heart_topic-0 to the committed offset FetchPosition{offset=3471, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=ubuntu:9092 (id: 0 rack: null), epoch=0}}
+[2025-05-01 11:27:00,269]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020269,"riskLevel":"High Risk","triggeredRule":"Rule 2: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=N, Cholesterol>192"}}
+[2025-05-01 11:27:00,271]  INFO {org.apache.kafka.clients.Metadata} - [Producer clientId=producer-5] Cluster ID: NVyJ_C7zTRy4CLLz8p2G1A
+[2025-05-01 11:27:00,272]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020272,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:27:00,272]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020272,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:27:00,272]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020272,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:27:00,272]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020272,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:27:00,273]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020272,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:27:00,273]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020273,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:27:00,273]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020273,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:27:00,274]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020273,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:27:00,274]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020274,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:27:00,275]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020274,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:27:00,275]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020274,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:27:00,276]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020276,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:27:00,276]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020276,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:27:00,277]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020276,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:27:00,277]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020277,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:27:00,277]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020277,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:27:00,277]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020277,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:27:00,278]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020278,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:27:00,278]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020278,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:27:00,278]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020278,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:27:00,279]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020279,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:27:00,280]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020279,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:27:00,280]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020279,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:27:00,280]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020279,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:27:00,281]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020281,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:27:00,281]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020281,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:27:00,282]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020282,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:27:00,282]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020282,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:27:00,282]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020282,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:27:00,283]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020283,"riskLevel":"High Risk","triggeredRule":"Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192"}}
+[2025-05-01 11:27:00,283]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020283,"riskLevel":"High Risk","triggeredRule":"Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143"}}
+[2025-05-01 11:27:00,283]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020283,"riskLevel":"High Risk","triggeredRule":"Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143"}}
+[2025-05-01 11:27:00,284]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020284,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:27:00,285]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020285,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:27:00,285]  INFO {io.siddhi.core.stream.output.sink.LogSink} - ALERT: Potential Heart Risk:🔴 : {"event":{"detection_timestamp":1746079020285,"riskLevel":"High Risk","triggeredRule":"Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y"}}
+[2025-05-01 11:27:20,287]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-5, groupId=vitals_consumer_group] Member consumer-5-75cd2f75-ff6b-44af-98d6-cbbda64d7d1e sending LeaveGroup request to coordinator ubuntu:9092 (id: 2147483647 rack: null)
+[2025-05-01 11:27:20,290]  INFO {io.siddhi.extension.io.kafka.source.KafkaSource} - Kafka Adapter disconnected for topic(s): heart_topic
+[2025-05-01 11:27:20,290]  INFO {org.apache.kafka.clients.producer.KafkaProducer} - [Producer clientId=producer-5] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+[2025-05-01 11:27:20,291]  INFO {io.siddhi.distribution.core.internal.StreamProcessorService} - Siddhi App File HeartDiseaseAlertApp undeployed successfully.
+[2025-05-01 11:27:20,322]  INFO {org.apache.kafka.clients.producer.ProducerConfig} - ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[2025-05-01 11:27:20,323]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka version: 2.3.0
+[2025-05-01 11:27:20,323]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka commitId: fc1aaa116b661c8a
+[2025-05-01 11:27:20,323]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka startTimeMs: 1746079040323
+[2025-05-01 11:27:20,323]  INFO {io.siddhi.extension.io.kafka.sink.KafkaSink} - Kafka producer created.
+[2025-05-01 11:27:20,324]  INFO {org.apache.kafka.clients.consumer.ConsumerConfig} - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = vitals_consumer_group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 30000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2025-05-01 11:27:20,324]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka version: 2.3.0
+[2025-05-01 11:27:20,325]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka commitId: fc1aaa116b661c8a
+[2025-05-01 11:27:20,325]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka startTimeMs: 1746079040324
+[2025-05-01 11:27:20,325]  INFO {org.apache.kafka.clients.consumer.KafkaConsumer} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Subscribed to topic(s): heart_topic
+[2025-05-01 11:27:20,325]  INFO {io.siddhi.extension.io.kafka.source.KafkaConsumerThread} - Subscribed for topics: [heart_topic]
+[2025-05-01 11:27:20,325]  INFO {io.siddhi.extension.io.kafka.source.ConsumerKafkaGroup} - Kafka Consumer thread starting to listen on topic(s): [heart_topic] with partition/s: null
+[2025-05-01 11:27:20,325]  INFO {org.apache.kafka.clients.consumer.ConsumerConfig} - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 30000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2025-05-01 11:27:20,326]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka version: 2.3.0
+[2025-05-01 11:27:20,326]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka commitId: fc1aaa116b661c8a
+[2025-05-01 11:27:20,326]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka startTimeMs: 1746079040326
+[2025-05-01 11:27:20,330]  INFO {org.apache.kafka.clients.producer.ProducerConfig} - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[2025-05-01 11:27:20,332]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka version: 2.3.0
+[2025-05-01 11:27:20,332]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka commitId: fc1aaa116b661c8a
+[2025-05-01 11:27:20,332]  INFO {org.apache.kafka.common.utils.AppInfoParser} - Kafka startTimeMs: 1746079040332
+[2025-05-01 11:27:20,335]  INFO {org.apache.kafka.clients.Metadata} - [Producer clientId=producer-8] Cluster ID: NVyJ_C7zTRy4CLLz8p2G1A
+[2025-05-01 11:27:20,335]  INFO {io.siddhi.distribution.core.internal.StreamProcessorService} - Siddhi App HeartDiseaseAlertApp deployed successfully
+[2025-05-01 11:27:20,338]  INFO {org.apache.kafka.clients.Metadata} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Cluster ID: NVyJ_C7zTRy4CLLz8p2G1A
+[2025-05-01 11:27:20,338]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Discovered group coordinator ubuntu:9092 (id: 2147483647 rack: null)
+[2025-05-01 11:27:20,339]  INFO {org.apache.kafka.clients.consumer.internals.ConsumerCoordinator} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Revoking previously assigned partitions []
+[2025-05-01 11:27:20,339]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] (Re-)joining group
+[2025-05-01 11:27:20,340]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] (Re-)joining group
+[2025-05-01 11:27:20,342]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Successfully joined group with generation 45
+[2025-05-01 11:27:20,343]  INFO {org.apache.kafka.clients.consumer.internals.ConsumerCoordinator} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Setting newly assigned partitions: heart_topic-0
+[2025-05-01 11:27:20,344]  INFO {org.apache.kafka.clients.consumer.internals.ConsumerCoordinator} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Setting offset for partition heart_topic-0 to the committed offset FetchPosition{offset=3513, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=ubuntu:9092 (id: 0 rack: null), epoch=0}}
+[2025-05-01 11:27:20,425]  INFO {org.apache.kafka.clients.Metadata} - [Producer clientId=producer-7] Cluster ID: NVyJ_C7zTRy4CLLz8p2G1A
+[2025-05-01 14:47:38,348]  INFO {org.apache.kafka.clients.FetchSessionHandler} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Error sending fetch request (sessionId=640756028, epoch=23844) to node 0: org.apache.kafka.common.errors.DisconnectException.
+[2025-05-01 14:47:38,348]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-3, groupId=consumer_group] Group coordinator ubuntu:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+[2025-05-01 14:47:38,348]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Group coordinator ubuntu:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+[2025-05-01 14:47:38,348]  INFO {org.apache.kafka.clients.FetchSessionHandler} - [Consumer clientId=consumer-3, groupId=consumer_group] Error sending fetch request (sessionId=581510700, epoch=24454) to node 0: org.apache.kafka.common.errors.DisconnectException.
+[2025-05-01 14:47:38,405]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Discovered group coordinator ubuntu:9092 (id: 2147483647 rack: null)
+[2025-05-01 14:47:38,405]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-3, groupId=consumer_group] Discovered group coordinator ubuntu:9092 (id: 2147483647 rack: null)
+[2025-05-01 15:03:18,383]  INFO {org.apache.kafka.clients.FetchSessionHandler} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Error sending fetch request (sessionId=748185256, epoch=1526) to node 0: org.apache.kafka.common.errors.DisconnectException.
+[2025-05-01 15:03:18,393]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Group coordinator ubuntu:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+[2025-05-01 15:03:18,393]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-3, groupId=consumer_group] Group coordinator ubuntu:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+[2025-05-01 15:03:18,383]  INFO {org.apache.kafka.clients.FetchSessionHandler} - [Consumer clientId=consumer-3, groupId=consumer_group] Error sending fetch request (sessionId=1243298278, epoch=1526) to node 0: org.apache.kafka.common.errors.DisconnectException.
+[2025-05-01 15:03:18,453]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Discovered group coordinator ubuntu:9092 (id: 2147483647 rack: null)
+[2025-05-01 15:03:18,453]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-3, groupId=consumer_group] Discovered group coordinator ubuntu:9092 (id: 2147483647 rack: null)
+[2025-05-01 15:16:49,409]  INFO {org.apache.kafka.clients.FetchSessionHandler} - [Consumer clientId=consumer-3, groupId=consumer_group] Error sending fetch request (sessionId=1790399330, epoch=241) to node 0: org.apache.kafka.common.errors.DisconnectException.
+[2025-05-01 15:16:49,409]  INFO {org.apache.kafka.clients.FetchSessionHandler} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Error sending fetch request (sessionId=709407877, epoch=241) to node 0: org.apache.kafka.common.errors.DisconnectException.
+[2025-05-01 15:16:49,409]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-3, groupId=consumer_group] Group coordinator ubuntu:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+[2025-05-01 15:16:49,409]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Group coordinator ubuntu:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+[2025-05-01 15:16:49,469]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-3, groupId=consumer_group] Discovered group coordinator ubuntu:9092 (id: 2147483647 rack: null)
+[2025-05-01 15:16:49,470]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Discovered group coordinator ubuntu:9092 (id: 2147483647 rack: null)
+[2025-05-01 15:28:58,390]  INFO {org.apache.kafka.clients.FetchSessionHandler} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Error sending fetch request (sessionId=2144904190, epoch=92) to node 0: org.apache.kafka.common.errors.DisconnectException.
+[2025-05-01 15:28:58,391]  INFO {org.apache.kafka.clients.FetchSessionHandler} - [Consumer clientId=consumer-3, groupId=consumer_group] Error sending fetch request (sessionId=378766600, epoch=92) to node 0: org.apache.kafka.common.errors.DisconnectException.
+[2025-05-01 15:28:58,403]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-3, groupId=consumer_group] Group coordinator ubuntu:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+[2025-05-01 15:28:58,403]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Group coordinator ubuntu:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+[2025-05-01 15:28:58,460]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-3, groupId=consumer_group] Discovered group coordinator ubuntu:9092 (id: 2147483647 rack: null)
+[2025-05-01 15:28:58,460]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Discovered group coordinator ubuntu:9092 (id: 2147483647 rack: null)
+[2025-05-01 16:20:23,407]  INFO {org.apache.kafka.clients.FetchSessionHandler} - [Consumer clientId=consumer-3, groupId=consumer_group] Error sending fetch request (sessionId=1718563983, epoch=3499) to node 0: org.apache.kafka.common.errors.DisconnectException.
+[2025-05-01 16:20:23,408]  INFO {org.apache.kafka.clients.FetchSessionHandler} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Error sending fetch request (sessionId=1247850783, epoch=3499) to node 0: org.apache.kafka.common.errors.DisconnectException.
+[2025-05-01 16:20:23,411]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-3, groupId=consumer_group] Group coordinator ubuntu:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+[2025-05-01 16:20:23,412]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Group coordinator ubuntu:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+[2025-05-01 16:20:23,473]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-3, groupId=consumer_group] Discovered group coordinator ubuntu:9092 (id: 2147483647 rack: null)
+[2025-05-01 16:20:23,473]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Discovered group coordinator ubuntu:9092 (id: 2147483647 rack: null)
+[2025-05-01 16:48:04,400]  INFO {org.apache.kafka.clients.FetchSessionHandler} - [Consumer clientId=consumer-3, groupId=consumer_group] Error sending fetch request (sessionId=1144791244, epoch=563) to node 0: org.apache.kafka.common.errors.DisconnectException.
+[2025-05-01 16:48:04,402]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Group coordinator ubuntu:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+[2025-05-01 16:48:04,402]  INFO {org.apache.kafka.clients.FetchSessionHandler} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Error sending fetch request (sessionId=1068548600, epoch=563) to node 0: org.apache.kafka.common.errors.DisconnectException.
+[2025-05-01 16:48:04,400]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-3, groupId=consumer_group] Group coordinator ubuntu:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+[2025-05-01 16:48:04,463]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-3, groupId=consumer_group] Discovered group coordinator ubuntu:9092 (id: 2147483647 rack: null)
+[2025-05-01 16:48:04,463]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Discovered group coordinator ubuntu:9092 (id: 2147483647 rack: null)
+[2025-05-01 18:02:52,633]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Group coordinator ubuntu:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+[2025-05-01 18:02:52,637]  INFO {org.apache.kafka.clients.FetchSessionHandler} - [Consumer clientId=consumer-3, groupId=consumer_group] Error sending fetch request (sessionId=550829517, epoch=3207) to node 0: org.apache.kafka.common.errors.DisconnectException.
+[2025-05-01 18:02:52,637]  INFO {org.apache.kafka.clients.FetchSessionHandler} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Error sending fetch request (sessionId=1747446309, epoch=3207) to node 0: org.apache.kafka.common.errors.DisconnectException.
+[2025-05-01 18:02:52,639]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-3, groupId=consumer_group] Group coordinator ubuntu:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+[2025-05-01 18:02:52,700]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Discovered group coordinator ubuntu:9092 (id: 2147483647 rack: null)
+[2025-05-01 18:02:52,700]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-3, groupId=consumer_group] Discovered group coordinator ubuntu:9092 (id: 2147483647 rack: null)
+[2025-05-01 21:26:21,394]  INFO {org.apache.kafka.clients.FetchSessionHandler} - [Consumer clientId=consumer-3, groupId=consumer_group] Error sending fetch request (sessionId=216136378, epoch=6214) to node 0: org.apache.kafka.common.errors.DisconnectException.
+[2025-05-01 21:26:21,393]  INFO {org.apache.kafka.clients.FetchSessionHandler} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Error sending fetch request (sessionId=913384264, epoch=6214) to node 0: org.apache.kafka.common.errors.DisconnectException.
+[2025-05-01 21:26:21,395]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-3, groupId=consumer_group] Group coordinator ubuntu:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+[2025-05-01 21:26:21,396]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Group coordinator ubuntu:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+[2025-05-01 21:26:21,457]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Discovered group coordinator ubuntu:9092 (id: 2147483647 rack: null)
+[2025-05-01 21:26:21,457]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-3, groupId=consumer_group] Discovered group coordinator ubuntu:9092 (id: 2147483647 rack: null)
+[2025-05-01 22:09:05,400]  INFO {org.apache.kafka.clients.FetchSessionHandler} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Error sending fetch request (sessionId=1069754155, epoch=3151) to node 0: org.apache.kafka.common.errors.DisconnectException.
+[2025-05-01 22:09:05,400]  INFO {org.apache.kafka.clients.FetchSessionHandler} - [Consumer clientId=consumer-3, groupId=consumer_group] Error sending fetch request (sessionId=304717002, epoch=3151) to node 0: org.apache.kafka.common.errors.DisconnectException.
+[2025-05-01 22:09:05,406]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-3, groupId=consumer_group] Group coordinator ubuntu:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+[2025-05-01 22:09:05,405]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Group coordinator ubuntu:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+[2025-05-01 22:09:05,469]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Discovered group coordinator ubuntu:9092 (id: 2147483647 rack: null)
+[2025-05-01 22:09:05,470]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-3, groupId=consumer_group] Discovered group coordinator ubuntu:9092 (id: 2147483647 rack: null)
+[2025-05-01 22:59:54,602]  INFO {org.apache.kafka.clients.FetchSessionHandler} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Error sending fetch request (sessionId=556303463, epoch=4567) to node 0: org.apache.kafka.common.errors.DisconnectException.
+[2025-05-01 22:59:54,608]  INFO {org.apache.kafka.clients.FetchSessionHandler} - [Consumer clientId=consumer-3, groupId=consumer_group] Error sending fetch request (sessionId=667544242, epoch=4567) to node 0: org.apache.kafka.common.errors.DisconnectException.
+[2025-05-01 22:59:54,609]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-3, groupId=consumer_group] Group coordinator ubuntu:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+[2025-05-01 22:59:54,609]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Group coordinator ubuntu:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+[2025-05-01 22:59:54,668]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-3, groupId=consumer_group] Discovered group coordinator ubuntu:9092 (id: 2147483647 rack: null)
+[2025-05-01 22:59:54,668]  INFO {org.apache.kafka.clients.consumer.internals.AbstractCoordinator} - [Consumer clientId=consumer-7, groupId=vitals_consumer_group] Discovered group coordinator ubuntu:9092 (id: 2147483647 rack: null)

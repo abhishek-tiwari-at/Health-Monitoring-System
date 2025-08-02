@@ -1,0 +1,83 @@
+@App:name("StrokeAlertApp")
+@App:description("Detects potential stroke risks.")
+
+
+@source(
+    type='kafka',
+    topic.list='stroke_topic',
+    bootstrap.servers='localhost:9092',
+    partition.no='0',
+    group.id='consumer_group',
+    threading.option='single.thread',
+    @map(type='json')
+)
+define stream VitalStream (
+    id string,
+    gender string,
+    age int,
+    hypertension int,
+    heart_disease int,
+    ever_married string,
+    work_type string,
+    Residence_type string,
+    avg_glucose_level double,
+    bmi double,
+    smoking_status string,
+    
+);
+
+define stream AlertStream (
+    detection_timestamp long,
+    id string,
+    riskLevel string,
+    triggeredRule string
+);
+
+@sink(
+    type='log',
+    prefix='ALERT: Potential Heart Risk:🔴',
+    @map(type='json')
+)
+define stream LogAlertStream (
+    detection_timestamp long,
+    id string,
+    riskLevel string,
+    triggeredRule string
+);
+
+@sink(
+    type='kafka',
+    topic='stroke_topic_alert',
+    bootstrap.servers='localhost:9092',
+    prefix='ALERT: Potential Heart Risk:🔴',
+    @map(type='json')
+)
+define stream HeartRiskAlertStream (
+    detection_timestamp long,
+    id string,
+    riskLevel string,
+    triggeredRule string
+);
+
+@info(name='Stroke_Rule_1')
+FROM VitalStream[
+	age > 67.50 AND
+	avg_glucose_level > 167.67
+]
+Select eventTimestamp() as detection_timestamp, id, 'High Risk' as riskLevel, 'Rule 1: age > 67.50 and avg_glucose_level > 269.67' as triggeredRule
+INSERT INTO AlertStream;
+@info(name='Stroke_Rule_2')
+FROM VitalStream[
+	age < 54.4 and hypertension > 0.5 and bmi > 32.1 and smoking_status == 'smokes']
+Select eventTimestamp() as detection_timestamp, id, 'High Risk' as riskLevel, 'Rule 2: age < 54.4 and hypertension > 0.5 and bmi > 32.1 and smoking_status == 'smokes'' as triggeredRule
+INSERT INTO AlertStream;
+
+@info(name='Route_Alerts')
+FROM AlertStream
+SELECT *
+INSERT INTO LogAlertStream;
+
+@info(name='Route_Alerts_to_Kafka')
+FROM AlertStream
+SELECT *
+INSERT INTO KafkaAlertStream;

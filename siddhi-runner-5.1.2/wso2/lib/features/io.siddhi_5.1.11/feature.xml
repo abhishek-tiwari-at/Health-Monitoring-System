@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<feature id="io.siddhi" label="Siddhi Feature" provider-name="%providerName" version="5.1.11">
+  <description>This feature contains the dependency bundles related to Siddhi</description>
+  <copyright>%copyright</copyright>
+  <license url="%licenseURL">%license</license>
+  <plugin id="org.antlr.antlr4-runtime" unpack="false" version="4.7.2"/>
+  <plugin id="io.dropwizard.metrics.core" unpack="false" version="3.1.0"/>
+  <plugin id="slf4j.log4j12" unpack="false" version="1.7.12"/>
+  <plugin id="osgi.core" unpack="false" version="6.0.0.201403061837"/>
+  <plugin id="disruptor" unpack="false" version="3.4.2.wso2v1"/>
+  <plugin id="quartz" unpack="false" version="2.1.1.wso2v1"/>
+  <plugin id="siddhi-query-api" unpack="false" version="5.1.11"/>
+  <plugin id="siddhi-annotations" unpack="false" version="5.1.11"/>
+  <plugin id="slf4j.api" unpack="false" version="1.7.12"/>
+  <plugin id="siddhi-query-compiler" unpack="false" version="5.1.11"/>
+  <plugin id="org.apache.commons.lang3" unpack="false" version="3.9.0"/>
+  <plugin id="org.eclipse.osgi.services" unpack="false" version="3.3.100.v20130513-1956"/>
+  <plugin id="com.google.guava" unpack="false" version="23.0.0"/>
+  <plugin id="siddhi-core" unpack="false" version="5.1.11"/>
+  <require/>
+</feature>

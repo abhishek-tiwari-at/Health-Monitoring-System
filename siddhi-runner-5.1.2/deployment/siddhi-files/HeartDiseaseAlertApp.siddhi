@@ -1,0 +1,208 @@
+@App:name("HeartDiseaseAlertApp")
+@App:description("Detects potential heart disease risks.")
+
+
+@source(
+    type='kafka',
+    topic.list='heart_topic',  -- Corrected topic name
+    bootstrap.servers='localhost:9092',
+    partition.no='0',
+    group.id='vitals_consumer_group',
+    threading.option='single.thread',
+    @map(type='json')
+)
+define stream PatientVitalStream (
+    Age int,
+    Sex string,
+    ChestPainType string,
+    RestingBP int,
+    Cholesterol int,
+    FastingBS int,
+    RestingECG string,
+    MaxHR double,
+    ExerciseAngina string,
+    Oldpeak double,
+    ST_Slope string
+);
+
+define stream AlertStream (
+    detection_timestamp long,
+    riskLevel string,
+    triggeredRule string
+);
+
+@sink(
+    type='log',
+    prefix='ALERT: Potential Heart Risk:🔴',
+    @map(type='json')
+)
+define stream LogAlertStream (
+    detection_timestamp long,
+    riskLevel string,
+    triggeredRule string
+);
+
+@sink(
+    type='kafka',
+    topic='heart_topic_alert',
+    bootstrap.servers='localhost:9092',
+    prefix='ALERT: Potential Heart Risk:🔴',
+    @map(type='json')
+)
+define stream HeartRiskAlertStream (
+    detection_timestamp long,
+    riskLevel string,
+    triggeredRule string
+);
+
+-- Rule 1
+@info(name='Rule1_Risk')
+from PatientVitalStream[
+    ST_Slope == 'Down' or ST_Slope == 'Flat' and
+    ChestPainType == 'ASY' and
+    MaxHR <= 175 and
+    ExerciseAngina == 'N' and
+    Cholesterol <= 192
+]
+select  eventTimestamp() AS detection_timestamp,'High Risk' as riskLevel,
+       'Rule 1: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=N, Cholesterol<=192' as triggeredRule
+insert into AlertStream;
+
+-- Rule 2
+@info(name='Rule2_Risk')
+from PatientVitalStream[
+     ST_Slope == 'Down' or ST_Slope == 'Flat' and
+    ChestPainType == 'ASY' and
+    MaxHR <= 175 and
+    ExerciseAngina == 'N' and
+    Cholesterol > 192
+]
+select eventTimestamp() AS detection_timestamp, 'High Risk' as riskLevel,
+       'Rule 2: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=N, Cholesterol>192' as triggeredRule
+insert into AlertStream;
+
+-- Rule 3
+@info(name='Rule3_Risk')
+from PatientVitalStream[
+     ST_Slope == 'Down' or ST_Slope == 'Flat' and
+    ChestPainType == 'ASY' and
+    MaxHR <= 175 and
+    ExerciseAngina == 'Y'
+]
+select eventTimestamp() AS detection_timestamp,'High Risk' as riskLevel,
+       'Rule 3: ST_Slope=[Down, Flat], ChestPain=ASY, MaxHR<=175, ExerciseAngina=Y' as triggeredRule
+insert into AlertStream;
+
+-- Rule 8
+@info(name='Rule8_Risk')
+from PatientVitalStream[
+     ST_Slope == 'Down' or ST_Slope == 'Flat' and
+    ChestPainType == 'ATA' or ChestPainType == 'NAP' or ChestPainType == 'TA' and
+    Sex == 'M' and
+    Age <= 65 and
+    Cholesterol <= 192
+]
+select eventTimestamp() AS detection_timestamp,'High Risk' as riskLevel,
+       'Rule 8: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age<=65, Cholesterol<=192' as triggeredRule
+insert into AlertStream;
+
+-- Rule 10
+@info(name='Rule10_Risk')
+from PatientVitalStream[
+     ST_Slope == 'Down' or ST_Slope == 'Flat' and
+    ChestPainType == 'ATA' or ChestPainType == 'NAP' or ChestPainType == 'TA' and
+    Sex == 'M' and
+    Age > 65 and
+    MaxHR <= 143
+]
+select eventTimestamp() AS detection_timestamp,'High Risk' as riskLevel,
+       'Rule 10: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR<=143' as triggeredRule
+insert into AlertStream;
+
+-- Rule 11
+@info(name='Rule11_Risk')
+from PatientVitalStream[
+     ST_Slope == 'Down' or ST_Slope == 'Flat' and
+    ChestPainType == 'ATA' or ChestPainType == 'NAP' or ChestPainType == 'TA' and
+    Sex == 'M' and
+    Age > 65 and
+    MaxHR > 143
+]
+select eventTimestamp() AS detection_timestamp,'High Risk' as riskLevel,
+       'Rule 11: ST_Slope=[Down, Flat], ChestPain=[ATA, NAP, TA], Sex=M, Age>65, MaxHR>143' as triggeredRule
+insert into AlertStream;
+
+-- Rule 13
+@info(name='Rule13_Risk')
+from PatientVitalStream[
+    ST_Slope == 'UP' and
+    Oldpeak > 0.10 and
+    Oldpeak <= 1.25 and
+    Cholesterol <= 42 and
+    RestingBP <= 126
+]
+select eventTimestamp() AS detection_timestamp,'High Risk' as riskLevel,
+       'Rule 13: ST_Slope=UP, 0.10<Oldpeak<=1.25, Cholesterol<=42, RestingBP<=126' as triggeredRule
+insert into AlertStream;
+
+-- Rule 15
+@info(name='Rule15_Risk')
+from PatientVitalStream[
+    ST_Slope == 'UP' and
+    Oldpeak <= 1.25 and
+    Cholesterol <= 42 and
+    RestingBP > 126 and
+    MaxHR <= 102
+]
+select eventTimestamp() AS detection_timestamp,'High Risk' as riskLevel,
+       'Rule 15: ST_Slope=UP, Oldpeak<=1.25, Cholesterol<=42, RestingBP>126, MaxHR<=102' as triggeredRule
+insert into AlertStream;
+
+-- Rule 20
+@info(name='Rule20_Risk')
+from PatientVitalStream[
+    ST_Slope == 'UP' and
+    Oldpeak > 1.25 and
+    Age <= 65 and
+    Oldpeak <= 2.40 and
+    ExerciseAngina == 'Y'
+]
+select eventTimestamp() AS detection_timestamp,'High Risk' as riskLevel,
+       'Rule 20: ST_Slope=UP, 1.25<Oldpeak<=2.40, Age<=65, ExerciseAngina=Y' as triggeredRule
+insert into AlertStream;
+
+-- Rule 21
+@info(name='Rule21_Risk')
+from PatientVitalStream[
+    ST_Slope == 'UP' and
+    Oldpeak > 2.40 and
+    Age <= 65
+]
+select eventTimestamp() AS detection_timestamp,'High Risk' as riskLevel,
+       'Rule 21: ST_Slope=UP, Oldpeak>2.40, Age<=65' as triggeredRule
+insert into AlertStream;
+
+-- Rule 22
+@info(name='Rule22_Risk')
+from PatientVitalStream[
+    ST_Slope == 'UP' and
+    Oldpeak > 1.25 and
+    Age > 65 and
+    RestingBP <= 156 and
+    MaxHR <= 172
+]
+select eventTimestamp() AS detection_timestamp,'High Risk' as riskLevel,
+       'Rule 22: ST_Slope=UP, Oldpeak>1.25, Age>65, RestingBP<=156, MaxHR<=172' as triggeredRule
+insert into AlertStream;
+
+-- Route alerts to logging
+@info(name='Route_Alerts')
+from AlertStream
+select *
+insert into LogAlertStream;
+
+-- Route alerts to Kafka topic
+@info(name='Route_Alerts_to_Kafka')
+from AlertStream
+select *
+insert into HeartRiskAlertStream;
