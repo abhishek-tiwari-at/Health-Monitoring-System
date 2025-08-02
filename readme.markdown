@@ -1,5 +1,15 @@
 # Real-Time Health Event Detection System
 
+## Introduction
+
+This project is a **distributed, real-time healthcare analytics platform** designed to process chronic disease-related health data streams at scale.  
+It integrates **Apache Kafka** for real-time ingestion of patient vitals such as blood pressure, glucose levels, and heart rate, and uses **Siddhi Complex Event Processing (CEP)** to detect critical health events based on predefined clinical rules and machine learning models.
+
+The platform applies **Random Forest-based clinical rule derivation (84% accuracy)** along with **national and WHO treatment guidelines** to identify early warning signals such as stroke risk, cardiac alerts, and diabetes crises.  
+With an optimized event-driven pipeline, the system processes **1500+ complex events per second** and generates **low-latency alerts** for timely intervention.
+
+This project demonstrates how **Big Data technologies and CEP engines** can be combined to deliver scalable, high-performance solutions for real-time healthcare monitoring and decision support.
+
 This README provides instructions to set up and run the real-time health event detection system, which processes chronic disease data using Kafka, Siddhi CEP, and a Streamlit dashboard.
 
 ## Prerequisites
